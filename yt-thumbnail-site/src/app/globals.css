@@ -16,14 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -39,13 +31,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter.woff2") format("woff2"),
-    url("/fonts/Inter.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
