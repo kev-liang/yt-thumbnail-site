@@ -1,11 +1,19 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+import { ChromeReaderMode } from "@mui/icons-material";
+import { Box, Button, Container, SvgIcon, Typography } from "@mui/material";
+import Image from "next/image";
+import chromeLogo from "../../../public/googlechrome.svg";
 
 const Hero = () => {
+  // const ChromeIcon = (props) => {
+  //   return <SvgIcon component={chromeLogo} inheritViewBox {...props} />;
+  // };
   return (
     <>
       <Container maxWidth="lg" sx={{ textAlign: "center" }}>
         <Typography variant="h1">
-          Compare your thumbnail and title to others{" "}
+          Compare your thumbnail and title
+          <Box component="br" />
+          to others{" "}
           <Typography
             component="span"
             sx={{
@@ -23,9 +31,18 @@ const Hero = () => {
         </Typography>
         <Button
           variant="contained"
-          sx={{ color: "white", px: 5, mt: 4, borderRadius: "50px" }}
+          sx={{ color: "white", py: 1, px: 5, mt: 4, borderRadius: "50px" }}
+          startIcon={
+            <Image
+              src={chromeLogo}
+              alt="chrome_logo"
+              style={{ filter: "invert(100%)" }} // white stroke
+            />
+          }
         >
-          <Typography variant="h3">Install Chrome Extension</Typography>
+          <Typography variant="h3" marginLeft={1}>
+            Install Chrome Extension
+          </Typography>
         </Button>
       </Container>
     </>
