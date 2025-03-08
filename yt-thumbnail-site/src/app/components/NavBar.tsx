@@ -6,14 +6,14 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box component="section" sx={{ display: "flex", mb: 8 }}>
       <AppBar
         component="nav"
         sx={{
           position: "static",
           backgroundColor: "inherit",
-          color: "#000",
           boxShadow: "none",
+          color: "text.primary",
           px: 50,
         }}
       >
@@ -21,10 +21,6 @@ const NavBar = () => {
           <Typography sx={{ flexGrow: 1 }}>
             Youtube Thumbnail Swapper
           </Typography>
-          <Box sx={{ display: "flex", gap: 2 }}>
-            <Link href="/">How to Use</Link>
-            <Link href="/">FAQ</Link>
-          </Box>
         </Toolbar>
       </AppBar>
     </Box>
