@@ -16,6 +16,7 @@ const Hero = () => {
           to others{" "}
           <Typography
             component="span"
+            variant="h1"
             sx={{
               color: "primary.main",
               fontSize: "inherit",

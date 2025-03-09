@@ -2,7 +2,9 @@
 
 import Menu from "@mui/icons-material/Menu";
 import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
+import Image from "next/image";
 import Link from "next/link";
+import logo from "../../../public/logo.png";
 
 const NavBar = () => {
   return (
@@ -14,10 +16,15 @@ const NavBar = () => {
           backgroundColor: "inherit",
           boxShadow: "none",
           color: "text.primary",
-          px: 50,
+          px: { sm: 0, md: 5, lg: 20 },
         }}
       >
-        <Toolbar>
+        <Toolbar sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+          <Image
+            src={logo}
+            alt="youtube-thumbnail-swapper-logo"
+            style={{ height: "30px", width: "40px" }}
+          />
           <Typography sx={{ flexGrow: 1 }}>
             Youtube Thumbnail Swapper
           </Typography>

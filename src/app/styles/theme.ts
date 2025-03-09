@@ -22,6 +22,7 @@ let theme = createTheme({
   },
   typography: {
     fontFamily: "var(--font-roboto)",
+    fontSize: 16,
     h1: {
       fontSize: "64px",
       fontWeight: "bold",
