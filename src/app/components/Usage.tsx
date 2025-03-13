@@ -6,19 +6,23 @@ import { useTheme } from "@emotion/react";
 const usageCards = [
   {
     title: "Home Page",
-    icon: <Home sx={{ height: 100, width: 100 }} />,
+    icon: <Home sx={{ height: 80, width: 80 }} />,
+    label: "Capture the attention of viewers among top-performing content.",
   },
   {
-    title: "Recommended Feed",
-    icon: <DynamicFeed sx={{ height: 100, width: 100 }} />,
+    title: "Recommended",
+    icon: <DynamicFeed sx={{ height: 80, width: 80 }} />,
+    label: "Stand out from the other suggested videos.",
   },
   {
     title: "Channel Page",
-    icon: <Tv sx={{ height: 100, width: 100 }} />,
+    icon: <Tv sx={{ height: 80, width: 80 }} />,
+    label: "Directly compare to your heroes or competitors.",
   },
   {
     title: "Search Page",
-    icon: <Search sx={{ height: 100, width: 100 }} />,
+    icon: <Search sx={{ height: 80, width: 80 }} />,
+    label: "Target SEO terms then compare among similar topics.",
   },
 ];
 
@@ -31,13 +35,22 @@ const Usage = () => {
       >
         Swap your thumbnail and title all over Youtube
       </Typography>
-      <Grid2 container alignItems="center" marginX={{ lg: 10, md: 0, sm: 0 }}>
+      <Grid2 container alignItems="center" marginX={{ lg: 3, md: 10, sm: 0 }}>
         {usageCards.map((usageCard) => (
-          <Grid2 size={{ sm: 12, md: 6, lg: 3 }} key={usageCard.title}>
+          <Grid2
+            size={{ xs: 12, sm: 6, lg: 3 }}
+            key={usageCard.title}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              mb: { md: 3, xs: 4 },
+            }}
+          >
             <UsageCard
               title={usageCard.title}
               icon={usageCard.icon}
               key={usageCard.title}
+              label={usageCard.label}
             />
           </Grid2>
         ))}

@@ -4,9 +4,6 @@ import Image from "next/image";
 import chromeLogo from "../../../public/googlechrome.svg";
 
 const Hero = () => {
-  // const ChromeIcon = (props) => {
-  //   return <SvgIcon component={chromeLogo} inheritViewBox {...props} />;
-  // };
   return (
     <>
       <Container maxWidth="lg" sx={{ textAlign: "center" }}>
@@ -26,7 +23,7 @@ const Hero = () => {
             directly on Youtube
           </Typography>
         </Typography>
-        <Typography variant="h3">
+        <Typography variant="h2" marginTop={2}>
           Optimize your your thumbnail and title with instant, side-by-side
           comparisons.
         </Typography>
@@ -36,7 +33,7 @@ const Hero = () => {
           startIcon={
             <Image
               src={chromeLogo}
-              alt="chrome_logo"
+              alt="chrome-logo"
               style={{ filter: "invert(100%)" }} // white stroke
             />
           }
