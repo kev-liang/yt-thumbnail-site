@@ -20,14 +20,21 @@ const NavBar = () => {
         }}
       >
         <Toolbar sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-          <Image
-            src={logo}
-            alt="youtube-thumbnail-swapper-logo"
-            style={{ height: "30px", width: "40px" }}
-          />
-          <Typography variant="h3" sx={{ flexGrow: 1 }}>
-            Youtube Thumbnail Swapper
-          </Typography>
+          <Link
+            href="/"
+            style={{ display: "flex", alignItems: "center", gap: "5px" }}
+          >
+            <Image
+              src={logo}
+              alt="youtube-thumbnail-swapper-logo"
+              style={{ height: "30px", width: "40px" }}
+            />
+            <Typography
+              sx={{ flexGrow: 1, fontWeight: "bold", fontSize: "20px" }}
+            >
+              Youtube Thumbnail Swapper
+            </Typography>
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>

@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "How is my data used?",
     answer:
-      " Your data is only used when displaying data in the extension or on the Youtube page. It is not sold to any third-parties ",
+      " Your data is only used for displaying data in the extension or on the Youtube page. It is not sold to any third-parties ",
   },
   {
     question: "Is it free?",

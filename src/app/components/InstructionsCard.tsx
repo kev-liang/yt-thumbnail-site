@@ -7,7 +7,7 @@ const InstructionsCard = ({
   pic,
 }: Readonly<{ stepNum: number; desc: string; pic: ReactNode }>) => {
   return (
-    <Card
+    <Box
       sx={{ backgroundColor: "grey.200", height: "100%", p: { xs: 2, lg: 6 } }}
     >
       <Box display="flex" justifyContent="space-between" height="100%">
@@ -23,11 +23,18 @@ const InstructionsCard = ({
             {desc}
           </Typography>
         </Box>
-        <Box display="flex" alignItems="center">
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            boxShadow:
+              "0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)",
+          }}
+        >
           {pic}
         </Box>
       </Box>
-    </Card>
+    </Box>
   );
 };
 export default InstructionsCard;

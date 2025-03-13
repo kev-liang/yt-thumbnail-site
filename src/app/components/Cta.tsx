@@ -10,7 +10,7 @@ const Cta = () => {
           py: 5,
           maxWidth: "1200px",
           mx: "auto",
-          backgroundColor: "common.black",
+          backgroundColor: "grey.800",
           color: "common.white",
           borderRadius: 10,
         }}
@@ -18,14 +18,14 @@ const Cta = () => {
         <Typography variant="h2" textAlign="center" fontWeight="bold">
           See how you stack up to the competition
         </Typography>
-        <Box sx={{ maxWidth: "100ch" }}>
+        <Box sx={{ maxWidth: "80ch" }}>
           <Typography variant="h4" marginTop={4}>
             Whether it be on the home page or directly to another Youtuber’s
-            channel, you can see if your ideas stand out more than the videos
-            around them. Give your video the click-through-rate it deserves.
+            channel, you can see if your ideas stand out. Give your video the
+            click-through-rate it deserves.
           </Typography>
           <Typography variant="h4" marginTop={2}>
-            See your thumbnail and title exactly how viewers would on Youtube.
+            Preview your thumbnail and title just like they appear on YouTube.
           </Typography>
           <Button
             sx={{
@@ -37,7 +37,7 @@ const Cta = () => {
               px: 5,
             }}
           >
-            <Typography>Install Chrome Extension</Typography>
+            <Typography fontWeight="bold">Install Chrome Extension</Typography>
           </Button>
         </Box>
       </Box>

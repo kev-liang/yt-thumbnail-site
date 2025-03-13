@@ -23,7 +23,7 @@ const Hero = () => {
             directly on Youtube
           </Typography>
         </Typography>
-        <Typography variant="h2" marginTop={2}>
+        <Typography variant="h3" marginTop={2}>
           Optimize your your thumbnail and title with instant, side-by-side
           comparisons.
         </Typography>

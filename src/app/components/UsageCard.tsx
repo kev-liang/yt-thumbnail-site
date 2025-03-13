@@ -41,7 +41,7 @@ const UsageCard = ({
           width: 120,
           height: 120,
           boxShadow: 1,
-          color: "common.black",
+          color: "grey.800",
         }}
       >
         {icon}

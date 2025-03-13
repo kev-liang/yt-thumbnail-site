@@ -41,7 +41,7 @@ const InstructionsSection = () => {
       ),
     },
     {
-      desc: "Swap anywhere you see a standard video on Youtube",
+      desc: "Swap with any YouTube video",
       pic: (
         <Image
           src={title}
