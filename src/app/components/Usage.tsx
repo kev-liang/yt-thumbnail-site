@@ -35,7 +35,7 @@ const Usage = () => {
       >
         Swap your thumbnail and title all over Youtube
       </Typography>
-      <Grid2 container alignItems="center" marginX={{ lg: 3, md: 10, sm: 0 }}>
+      <Grid2 container sx={{ maxWidth: "1600px", mx: "auto" }}>
         {usageCards.map((usageCard) => (
           <Grid2
             size={{ xs: 12, sm: 6, lg: 3 }}
