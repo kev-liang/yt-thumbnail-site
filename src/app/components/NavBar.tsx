@@ -25,7 +25,7 @@ const NavBar = () => {
             alt="youtube-thumbnail-swapper-logo"
             style={{ height: "30px", width: "40px" }}
           />
-          <Typography sx={{ flexGrow: 1 }}>
+          <Typography variant="h3" sx={{ flexGrow: 1 }}>
             Youtube Thumbnail Swapper
           </Typography>
         </Toolbar>

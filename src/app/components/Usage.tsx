@@ -7,7 +7,7 @@ const usageCards = [
   {
     title: "Home Page",
     icon: <Home sx={{ height: 80, width: 80 }} />,
-    label: "Capture the attention of viewers among top-performing content.",
+    label: "Capture the attention among top-performing content.",
   },
   {
     title: "Recommended",

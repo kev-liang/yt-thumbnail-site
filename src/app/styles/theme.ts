@@ -21,7 +21,7 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "var(--font-roboto)",
+    fontFamily: "var(--font-inter)",
     fontSize: 12,
     h1: {
       fontSize: "64px",
@@ -32,6 +32,9 @@ let theme = createTheme({
     },
     h3: {
       fontSize: "24px",
+    },
+    h4: {
+      fontSize: "16px",
     },
     button: {
       textTransform: "none",
