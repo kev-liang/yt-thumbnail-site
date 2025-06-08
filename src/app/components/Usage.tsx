@@ -7,22 +7,22 @@ const usageCards = [
   {
     title: "Home Page",
     icon: <Home sx={{ height: 80, width: 80 }} />,
-    label: "Capture the attention among top-performing content.",
+    label: "Capture attention among top-performing content.",
   },
   {
     title: "Recommended",
     icon: <DynamicFeed sx={{ height: 80, width: 80 }} />,
-    label: "Stand out from the other suggested videos.",
+    label: "Stand out from other suggested videos.",
   },
   {
     title: "Channel Page",
     icon: <Tv sx={{ height: 80, width: 80 }} />,
-    label: "Directly compare to your heroes or competitors.",
+    label: "Directly compare to your idols or competitors.",
   },
   {
     title: "Search Page",
     icon: <Search sx={{ height: 80, width: 80 }} />,
-    label: "Target SEO terms then compare among similar topics.",
+    label: "Target SEO terms and compare among similar topics.",
   },
 ];
 

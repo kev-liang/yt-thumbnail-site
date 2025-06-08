@@ -8,7 +8,7 @@ import logo from "../../../public/logo.png";
 
 const NavBar = () => {
   return (
-    <Box component="section" sx={{ display: "flex", mb: 8 }}>
+    <Box component="section" sx={{ display: "flex" }}>
       <AppBar
         component="nav"
         sx={{
