@@ -1,6 +1,5 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 import Image from "next/image";
-import chromeLogo from "../../../public/googlechrome.svg";
 
 const Hero = () => {
   return (
