@@ -1,8 +1,8 @@
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
-import upload from "../../../public/upload.jpg";
-import title from "../../../public/title.jpg";
-import select from "../../../public/select.jpg";
+import upload from "@/assets/upload.jpg";
+import title from "@/assets/title.jpg";
+import select from "@/assets/select.jpg";
 import InstructionsCard from "./InstructionsCard";
 
 const InstructionsSection = () => {

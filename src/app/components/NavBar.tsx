@@ -24,9 +24,10 @@ const NavBar = () => {
             style={{ display: "flex", alignItems: "center", gap: "5px" }}
           >
             <Image
-              src={logo}
+              src="/logo.png"
               alt="youtube-thumbnail-swapper-logo"
-              style={{ height: "30px", width: "40px" }}
+              width={40}
+              height={30}
             />
             <Typography
               sx={{ flexGrow: 1, fontWeight: "bold", fontSize: "20px" }}

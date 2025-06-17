@@ -31,9 +31,11 @@ const Hero = () => {
           sx={{ color: "white", py: 1, px: 5, mt: 4, borderRadius: "50px" }}
           startIcon={
             <Image
-              src={chromeLogo}
+              src="/googlechrome.svg"
               alt="chrome-logo"
               style={{ filter: "invert(100%)" }} // white stroke
+              width={30}
+              height={30}
             />
           }
         >
