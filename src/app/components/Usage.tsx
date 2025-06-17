@@ -1,7 +1,6 @@
 import { DynamicFeed, Home, Search, Tv } from "@mui/icons-material";
 import { Box, Grid2, Typography } from "@mui/material";
 import UsageCard from "./UsageCard";
-import { useTheme } from "@emotion/react";
 
 const usageCards = [
   {

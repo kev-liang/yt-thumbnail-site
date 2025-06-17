@@ -1,5 +1,4 @@
-import { ChromeReaderMode } from "@mui/icons-material";
-import { Box, Button, Container, SvgIcon, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import chromeLogo from "../../../public/googlechrome.svg";
 

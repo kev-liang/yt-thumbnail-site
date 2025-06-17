@@ -1,7 +1,6 @@
 "use client";
 
-import Menu from "@mui/icons-material/Menu";
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/logo.png";

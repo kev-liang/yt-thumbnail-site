@@ -1,14 +1,10 @@
 "use client";
 
-import { Box, Button, ButtonBase, Paper, Typography } from "@mui/material";
+import { Box, Button, Paper, Typography } from "@mui/material";
 import NavBar from "../components/NavBar";
 import { CheckCircle } from "@mui/icons-material";
 
 export default function ThankYouPage() {
-  const handleStartSwappingOnYoutube = () => {
-    window.open("https://www.youtube.com", "_blank");
-  };
-
   return (
     <>
       <NavBar />

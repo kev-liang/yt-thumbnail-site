@@ -43,7 +43,7 @@ const FAQ = () => {
         FAQ
       </Typography>
       {faqs.map((faq) => (
-        <Accordion sx={{ boxShadow: "none" }} disableGutters>
+        <Accordion sx={{ boxShadow: "none" }} disableGutters key={faq.answer}>
           <AccordionSummary expandIcon={<ExpandMore />}>
             <Typography sx={{ fontWeight: "bold" }}>{faq.question}</Typography>
           </AccordionSummary>
