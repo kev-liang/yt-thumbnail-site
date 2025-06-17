@@ -69,7 +69,7 @@ const InstructionsSection = () => {
         {instructions.map((instruction, instructionI) => (
           <Grid2 size={{ sm: 12, md: 6 }} key={instructionI}>
             <InstructionsCard
-              stepNum={instructionI}
+              stepNum={instructionI + 1}
               desc={instruction.desc}
               pic={instruction.pic}
             />
