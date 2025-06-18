@@ -34,6 +34,7 @@ const FAQ = () => {
   return (
     <Box
       component="section"
+      id="faq"
       sx={{ mx: "auto", width: { sm: "80%", md: "48rem" }, mb: 8 }}
     >
       <Typography

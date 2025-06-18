@@ -19,7 +19,7 @@ const InstructionsSection = () => {
       ),
     },
     {
-      desc: "Select from your gallery of thumbnails",
+      desc: "Select your thumbnail",
       pic: (
         <Image
           src={select}
@@ -30,7 +30,7 @@ const InstructionsSection = () => {
       ),
     },
     {
-      desc: "Add associated titles to your thumbnail",
+      desc: "Add titles to your thumbnail",
       pic: (
         <Image
           src={title}
@@ -55,6 +55,7 @@ const InstructionsSection = () => {
   return (
     <Box
       component="section"
+      id="instructions"
       sx={{ mt: 8, p: 5, maxWidth: "1600px", mx: "auto" }}
     >
       <Typography
