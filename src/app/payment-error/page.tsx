@@ -1,8 +1,8 @@
 "use client";
 
-import { Box, Button, Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import NavBar from "../components/NavBar";
-import { CheckCircle, ErrorOutline } from "@mui/icons-material";
+import { ErrorOutline } from "@mui/icons-material";
 import Footer from "../components/Footer";
 
 export default function ThankYouPage() {
