@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
 import upload from "@/assets/upload.jpg";
@@ -6,6 +8,12 @@ import select from "@/assets/select.jpg";
 import InstructionsCard from "./InstructionsCard";
 
 const InstructionsSection = () => {
+  const removeVscElementSpace = () => {
+    const vscElements = document.querySelectorAll(
+      ".vsc-controller"
+    ) as NodeListOf<HTMLElement>;
+    vscElements.forEach((el) => (el.style.display = "none"));
+  };
   const instructions = [
     {
       desc: "Upload your thumbnail",
@@ -43,13 +51,20 @@ const InstructionsSection = () => {
     {
       desc: "Swap with any YouTube video",
       pic: (
-        <video autoPlay loop muted style={{ maxWidth: "100%" }}>
+        <video
+          autoPlay
+          loop
+          muted
+          style={{ maxWidth: "100%" }}
+          onCanPlayThrough={removeVscElementSpace}
+        >
           <source src="/only-swap.webm" type="video/webm" />
           Your browser does not support HTML5 video.
         </video>
       ),
     },
   ];
+
   return (
     <Box
       component="section"
