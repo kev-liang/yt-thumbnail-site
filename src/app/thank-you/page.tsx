@@ -14,6 +14,7 @@ export default function ThankYouPage() {
         justifyContent="center"
         alignItems="center"
         minHeight="calc(100vh - 64px)"
+        my={8}
       >
         <Paper sx={{ py: 4, px: 8 }} elevation={9}>
           <Box
@@ -23,14 +24,21 @@ export default function ThankYouPage() {
             justifyContent="space-between"
           >
             <CheckCircle sx={{ height: 96, width: 96 }} color="primary" />
-            <Typography variant="h1" mt={10}>
+            <Typography variant="h2" mt={10} fontWeight="bold">
               Thank you for subscribing!
             </Typography>
-            <Typography variant="h3" mt={2}>
-              Enjoy unlimited uploads and swaps with Youtube Thumbnail Swapper
-            </Typography>
+            <Box width="50%">
+              <Typography variant="h4" mt={4}>
+                Enjoy unlimited uploads and swaps with Youtube Thumbnail
+                Swapper.
+              </Typography>
+              <Typography variant="h4" mt={2}>
+                If your extension is still open, refresh the page to access your
+                new Pro account.
+              </Typography>
+            </Box>
 
-            <Box mt={10}>
+            <Box mt={4}>
               <Button
                 onClick={() => window.open("https://www.youtube.com", "_blank")}
                 variant="contained"
@@ -38,7 +46,6 @@ export default function ThankYouPage() {
                   color: "white",
                   py: 1,
                   px: 5,
-                  mt: 4,
                   borderRadius: "50px",
                 }}
               >

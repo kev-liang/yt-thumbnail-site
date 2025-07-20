@@ -23,10 +23,10 @@ export default function ThankYouPage() {
             justifyContent="space-between"
           >
             <ErrorOutline sx={{ height: 96, width: 96 }} color="error" />
-            <Typography variant="h1" mt={4}>
+            <Typography variant="h2" mt={4}>
               Error processing payment
             </Typography>
-            <Typography variant="h3" mt={4}>
+            <Typography variant="h4" mt={4}>
               Try again or contact{" "}
               <a
                 style={{ textDecoration: "underline" }}

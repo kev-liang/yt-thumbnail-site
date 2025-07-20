@@ -22,8 +22,7 @@ const Hero = () => {
           </Typography>
         </Typography>
         <Typography variant="h3" marginTop={2}>
-          Optimize your your thumbnail and title with instant, side-by-side
-          comparisons.
+          Optimize your your content with instant, side-by-side comparisons.
         </Typography>
         <Button
           variant="contained"
