@@ -43,12 +43,10 @@ const InstructionsSection = () => {
     {
       desc: "Swap with any YouTube video",
       pic: (
-        <Image
-          src={title}
-          alt="upload-thumbnail"
-          width={title.width * 0.75}
-          height={title.height * 0.75}
-        />
+        <video autoPlay loop muted style={{ maxWidth: "100%" }}>
+          <source src="/only-swap.webm" type="video/webm" />
+          Your browser does not support HTML5 video.
+        </video>
       ),
     },
   ];

@@ -42,6 +42,11 @@ const Hero = () => {
             Install Chrome Extension
           </Typography>
         </Button>
+
+        <video autoPlay loop muted style={{ maxWidth: "100%" }}>
+          <source src="/main.webm" type="video/webm" />
+          Your browser does not support HTML5 video.
+        </video>
       </Container>
     </>
   );

@@ -16,7 +16,7 @@ const Cta = () => {
         }}
       >
         <Typography variant="h2" textAlign="center" fontWeight="bold">
-          See how you stack up to the competition
+          See how you measure up against the competition
         </Typography>
         <Box sx={{ maxWidth: "80ch" }}>
           <Typography variant="h4" marginTop={4}>
