@@ -14,3 +14,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+#controller {
+  display: none !important;
+}
+
+.vsc-controller {
+  display: none !important;
+}

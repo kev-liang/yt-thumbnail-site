@@ -25,7 +25,13 @@ const InstructionsCard = ({
           {/* </Box> */}
         </Grid2>
 
-        <Grid2 size={8} sx={{ display: "flex", justifyContent: "flex-end" }}>
+        <Grid2
+          size={8}
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
           {pic}
         </Grid2>
       </Grid2>

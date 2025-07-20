@@ -56,7 +56,7 @@ const InstructionsSection = () => {
           loop
           muted
           style={{ maxWidth: "100%" }}
-          onCanPlayThrough={removeVscElementSpace}
+          onLoadedData={removeVscElementSpace}
         >
           <source src="/only-swap.webm" type="video/webm" />
           Your browser does not support HTML5 video.
