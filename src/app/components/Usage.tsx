@@ -32,7 +32,7 @@ const Usage = () => {
         variant="h2"
         sx={{ fontWeight: "bold", textAlign: "center", mb: 8 }}
       >
-        Swap your thumbnail and title all over Youtube
+        Swap your thumbnail and title all over YouTube
       </Typography>
       <Grid2 container sx={{ maxWidth: "1600px", mx: "auto" }}>
         {usageCards.map((usageCard) => (

@@ -29,7 +29,7 @@ export default function ThankYouPage() {
             </Typography>
             <Box width="50%">
               <Typography variant="h4" mt={4}>
-                Enjoy unlimited uploads and swaps with Youtube Thumbnail
+                Enjoy unlimited uploads and swaps with YouTube Thumbnail
                 Swapper.
               </Typography>
               <Typography variant="h4" mt={2}>
@@ -50,7 +50,7 @@ export default function ThankYouPage() {
                 }}
               >
                 <Typography variant="h3" marginLeft={1}>
-                  Start Swapping on Youtube
+                  Start Swapping on YouTube
                 </Typography>
               </Button>
             </Box>

@@ -9,14 +9,14 @@ import {
 
 const faqs = [
   {
-    question: "Will this affect my Youtube account?",
+    question: "Will this affect my YouTube account?",
     answer:
-      "No, this extension only modifies the images and text in your browser and does not interact with your Youtube account.",
+      "No, this extension only modifies the images and text in your browser and does not interact with your YouTube account.",
   },
   {
     question: "How is my data used?",
     answer:
-      " Your data is only used for displaying data in the extension or on the Youtube page. It is not sold to any third-parties.",
+      " Your data is only used for displaying data in the extension or on the YouTube page. It is not sold to any third-parties.",
   },
   {
     question: "Is it free?",

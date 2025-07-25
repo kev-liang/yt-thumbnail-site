@@ -14,7 +14,7 @@ const Footer = () => {
         alignItems: "center",
       }}
     >
-      <Typography>Youtube Thumbnail Swapper © 2025</Typography>
+      <Typography>YouTube Thumbnail Swapper © 2025</Typography>
       <Box sx={{ display: "flex", gap: 3 }}>
         <Link href="/terms-of-service" color="inherit">
           Terms of Service

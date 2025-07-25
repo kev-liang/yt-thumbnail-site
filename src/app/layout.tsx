@@ -20,8 +20,8 @@ const inriaSerif = Inria_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Youtube Thumbnail Swapper",
-  description: "Swap your thumbnail directly on Youtube",
+  title: "YouTube Thumbnail Swapper",
+  description: "Swap your thumbnail directly on YouTube",
   icons: {
     icon: "/logo.png",
   },
