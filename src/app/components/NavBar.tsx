@@ -31,7 +31,7 @@ const NavBar = () => {
             <Typography
               sx={{ flexGrow: 1, fontWeight: "bold", fontSize: "20px" }}
             >
-              Youtube Thumbnail Swapper
+              Thumbnail Swapper
             </Typography>
           </Link>
         </Toolbar>

@@ -18,7 +18,7 @@ const Hero = () => {
               fontWeight: "inherit",
             }}
           >
-            directly on Youtube
+            directly on YouTube
           </Typography>
         </Typography>
         <Typography variant="h3" marginTop={2}>
