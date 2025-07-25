@@ -25,8 +25,8 @@ const NavBar = () => {
             <Image
               src="/logo.png"
               alt="youtube-thumbnail-swapper-logo"
-              width={30}
-              height={25}
+              width={25}
+              height={20}
             />
             <Typography
               sx={{ flexGrow: 1, fontWeight: "bold", fontSize: "20px" }}
