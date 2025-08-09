@@ -14,7 +14,7 @@ export default function ThankYouPage() {
         justifyContent="center"
         alignItems="center"
         minHeight="calc(100vh - 64px)"
-        my={8}
+        mb={8}
       >
         <Paper sx={{ py: 4, px: 8 }} elevation={9}>
           <Box
