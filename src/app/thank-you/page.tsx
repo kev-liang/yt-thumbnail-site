@@ -24,17 +24,20 @@ export default function ThankYouPage() {
             justifyContent="space-between"
           >
             <CheckCircle sx={{ height: 96, width: 96 }} color="primary" />
-            <Typography variant="h2" mt={10} fontWeight="bold">
+            <Typography variant="h1" mt={6} fontWeight="bold">
               Thank you for subscribing!
             </Typography>
-            <Box width="50%">
-              <Typography variant="h4" mt={4}>
+            <Box width="50%" textAlign="left">
+              <Typography variant="h4" mt={6}>
                 Enjoy unlimited uploads and swaps with YouTube Thumbnail
                 Swapper.
               </Typography>
               <Typography variant="h4" mt={2}>
-                If your extension is still open, refresh the page to access your
-                new Pro account.
+                If your extension is still open, please refresh the page to
+                access your new Pro account.
+              </Typography>
+              <Typography variant="h4" mt={2}>
+                Contact support@thumbnailswapper.com if you have any issues.
               </Typography>
             </Box>
 
