@@ -14,14 +14,14 @@ const faqs = [
       "No, this extension only modifies the images and text in your browser and does not interact with your YouTube account.",
   },
   {
-    question: "How is my data used?",
+    question: "How is my data used? Is it secure?",
     answer:
-      " Your data is only used for displaying data in the extension or on the YouTube page. It is not sold to any third-parties.",
+      "Your data is only used for displaying data in the extension or on the YouTube page. It is not sold to any third-parties. Your data is encrypted in transit and at rest.",
   },
   {
     question: "Is it free?",
     answer:
-      "Yes there is a free tier plan with 5 uploads and 10 swaps per month.",
+      "Yes there is a free tier plan with 5 uploads and 10 swaps per month. For unlimited swaps, it is 3.99 / month with a monthly plan or 34.99 / yr with a yearly plan.",
   },
   {
     question: "Can I downgrade / cancel my plan?",
