@@ -1,6 +1,16 @@
+"use client";
+
 import { Box, Button, Typography } from "@mui/material";
 
 const Cta = () => {
+  const handleInstallChromeExtensionClick = () => {
+    window.open(
+      "https://chromewebstore.google.com/detail/thumbnail-swapper/pfdapjpaicgfhghbmjennmchbgabofnf?authuser=0&hl=en",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <Box component="section" paddingX={2}>
       <Box
@@ -28,6 +38,7 @@ const Cta = () => {
             Preview your thumbnail and title just like they appear on YouTube.
           </Typography>
           <Button
+            onClick={handleInstallChromeExtensionClick}
             sx={{
               backgroundColor: "common.white",
               color: "common.black",

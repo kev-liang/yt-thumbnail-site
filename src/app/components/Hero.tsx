@@ -1,7 +1,17 @@
+"use client";
+
 import { Box, Button, Container, Typography } from "@mui/material";
 import Image from "next/image";
 
 const Hero = () => {
+  const handleInstallChromeExtensionClick = () => {
+    window.open(
+      "https://chromewebstore.google.com/detail/thumbnail-swapper/pfdapjpaicgfhghbmjennmchbgabofnf?authuser=0&hl=en",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <>
       <Container maxWidth="lg" sx={{ textAlign: "center" }}>
@@ -25,6 +35,7 @@ const Hero = () => {
           Optimize your your content with instant, side-by-side comparisons.
         </Typography>
         <Button
+          onClick={handleInstallChromeExtensionClick}
           variant="contained"
           sx={{ color: "white", py: 1, px: 5, mt: 4, borderRadius: "50px" }}
           startIcon={
@@ -41,6 +52,9 @@ const Hero = () => {
             Install Chrome Extension
           </Typography>
         </Button>
+        <Typography variant="h4" marginTop={2} color="grey.600">
+          Start swapping for free, no sign up required
+        </Typography>
 
         <video autoPlay loop muted style={{ maxWidth: "100%" }}>
           <source src="/main.webm" type="video/webm" />
