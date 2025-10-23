@@ -37,7 +37,8 @@ export default function ThankYouPage() {
                 access your new Pro account.
               </Typography>
               <Typography variant="h4" mt={2}>
-                Contact support@thumbnailswapper.com if you have any issues.
+                Contact support@thumbnailswapper.com if you have any questions
+                or issues.
               </Typography>
             </Box>
 
