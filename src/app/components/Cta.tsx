@@ -48,7 +48,7 @@ const Cta = () => {
               px: 5,
             }}
           >
-            <Typography fontWeight="bold">Install Chrome Extension</Typography>
+            <Typography fontWeight="bold">Add Chrome Extension</Typography>
           </Button>
         </Box>
       </Box>

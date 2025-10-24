@@ -49,7 +49,7 @@ const Hero = () => {
           }
         >
           <Typography variant="h3" marginLeft={1}>
-            Install Chrome Extension
+            Add Chrome Extension
           </Typography>
         </Button>
         <Typography variant="h4" marginTop={2} color="grey.600">
