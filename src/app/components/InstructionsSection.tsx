@@ -1,11 +1,30 @@
 "use client";
 
 import { Box, Grid2, Typography } from "@mui/material";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import upload from "@/assets/upload.jpg";
 import title from "@/assets/title.jpg";
 import select from "@/assets/select.jpg";
 import InstructionsCard from "./InstructionsCard";
+
+const ImageContainer = ({ pic }: { pic: StaticImageData }) => {
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        height: "100%",
+        minHeight: { xs: 200, md: 250 },
+        backgroundImage: `url(${pic.src})`,
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    ></Box>
+  );
+};
 
 const InstructionsSection = () => {
   const removeVscElementSpace = () => {
@@ -17,36 +36,15 @@ const InstructionsSection = () => {
   const instructions = [
     {
       desc: "Upload your thumbnail",
-      pic: (
-        <Image
-          src={upload}
-          alt="upload-thumbnail"
-          width={upload.width * 0.75}
-          height={upload.height * 0.75}
-        />
-      ),
+      pic: <ImageContainer pic={upload} />,
     },
     {
       desc: "Select your thumbnail",
-      pic: (
-        <Image
-          src={select}
-          alt="select-thumbnail"
-          width={select.width * 0.75}
-          height={select.height * 0.75}
-        />
-      ),
+      pic: <ImageContainer pic={select} />,
     },
     {
       desc: "Add titles to your thumbnail",
-      pic: (
-        <Image
-          src={title}
-          alt="title-thumbnail"
-          width={title.width * 0.75}
-          height={title.height * 0.75}
-        />
-      ),
+      pic: <ImageContainer pic={title} />,
     },
     {
       desc: "Swap with any YouTube video",
@@ -81,7 +79,11 @@ const InstructionsSection = () => {
       </Typography>
       <Grid2 container spacing={4}>
         {instructions.map((instruction, instructionI) => (
-          <Grid2 size={{ sm: 12, md: 6 }} key={instructionI}>
+          <Grid2
+            size={{ xs: 12, sm: 6 }}
+            key={instructionI}
+            sx={{ width: "100%" }}
+          >
             <InstructionsCard
               stepNum={instructionI + 1}
               desc={instruction.desc}
