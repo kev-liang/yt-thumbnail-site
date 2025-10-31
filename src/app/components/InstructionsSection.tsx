@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Grid2, Typography } from "@mui/material";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import upload from "@/assets/upload.jpg";
 import title from "@/assets/title.jpg";
 import select from "@/assets/select.jpg";
