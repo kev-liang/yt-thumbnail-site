@@ -56,7 +56,7 @@ const InstructionsSection = () => {
           style={{ maxWidth: "100%" }}
           onLoadedData={removeVscElementSpace}
         >
-          <source src="/only-swap.webm" type="video/webm" />
+          <source src="/only-swap.mp4" type="video/webm" />
           Your browser does not support HTML5 video.
         </video>
       ),

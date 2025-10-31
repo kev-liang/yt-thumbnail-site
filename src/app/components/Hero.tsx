@@ -57,7 +57,7 @@ const Hero = () => {
         </Typography>
 
         <video autoPlay loop muted style={{ maxWidth: "100%" }}>
-          <source src="/main.webm" type="video/webm" />
+          <source src="/main.mp4" type="video/webm" />
           Your browser does not support HTML5 video.
         </video>
       </Container>
