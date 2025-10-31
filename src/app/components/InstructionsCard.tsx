@@ -1,6 +1,5 @@
 import { Box, Grid2, Typography } from "@mui/material";
-import Image, { StaticImageData } from "next/image";
-import { JSX, ReactNode } from "react";
+import { ReactNode } from "react";
 
 const InstructionsCard = ({
   stepNum,
