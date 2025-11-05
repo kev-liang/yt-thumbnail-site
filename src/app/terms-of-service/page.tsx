@@ -9,6 +9,7 @@ import {
   ListItemText,
 } from "@mui/material";
 import NavBar from "../components/NavBar";
+import Footer from "@/app/components/Footer";
 
 export default function TermsOfService() {
   return (
@@ -189,6 +190,7 @@ export default function TermsOfService() {
           .
         </Typography>
       </Container>
+      <Footer />
     </>
   );
 }

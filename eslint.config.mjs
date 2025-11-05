@@ -13,8 +13,8 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
-      "@typescript-eslint/no-unused-vars": "off", // Disable unused vars warning
-      "react/no-unescaped-entities": "off", // Disable quote escaping requirement
+      "@typescript-eslint/no-unused-vars": "off",
+      "react/no-unescaped-entities": "off",
     },
   },
 ];
