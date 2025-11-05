@@ -21,7 +21,7 @@ export default function TermsOfService() {
         </Typography>
 
         <Typography variant="body2" color="text.secondary" paragraph>
-          Last Updated: {new Date().toLocaleDateString()}
+          Last Updated: 11/05/2025
         </Typography>
 
         <Box sx={{ mb: 4 }}>
@@ -121,11 +121,16 @@ export default function TermsOfService() {
           5. Termination
         </Typography>
         <Typography paragraph>
-          We may terminate or suspend your account immediately, without prior
-          notice or liability, for any reason whatsoever, including without
-          limitation if you breach these Terms. Upon termination, your right to
-          use the Service will cease immediately. If you wish to terminate your
-          account, you may simply discontinue using the Service or contact us at
+          We may terminate or suspend your account and access to the Service
+          immediately, without prior notice or liability, for any reason
+          whatsoever, including without limitation if you breach these Terms. We
+          reserve the right to revoke service for any reason at our sole
+          discretion.
+        </Typography>
+        <Typography paragraph>
+          Upon termination, your right to use the Service will cease
+          immediately. If you wish to terminate your account, you may simply
+          discontinue using the Service or contact us at
           support@thumbnailswapper.com.
         </Typography>
 
