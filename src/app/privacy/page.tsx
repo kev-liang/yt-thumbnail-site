@@ -1,11 +1,4 @@
-import {
-  Container,
-  Typography,
-  Paper,
-  Box,
-  Divider,
-  Link,
-} from "@mui/material";
+import { Container, Typography, Box, Divider, Link } from "@mui/material";
 import NavBar from "../components/NavBar";
 import Footer from "@/app/components/Footer";
 
