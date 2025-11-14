@@ -1,11 +1,8 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   output: "export",
-  // basePath: process.env.NODE_ENV === "production" ? "/yt-thumbnail-site" : "",
-  // assetPrefix:
-  //   process.env.NODE_ENV === "production" ? "/yt-thumbnail-site" : "",
   images: {
     unoptimized: true,
   },
@@ -16,6 +13,13 @@ const nextConfig: NextConfig = {
     });
     return config;
   },
+  // Add page extensions for MDX
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 };
 
-export default nextConfig;
+// Simply wrap with MDX - no ContentLayer needed
+const withMDX = createMDX({
+  // Add MDX options here if needed
+});
+
+export default withMDX(nextConfig);

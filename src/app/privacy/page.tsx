@@ -1,5 +1,5 @@
 import { Container, Typography, Box, Divider, Link } from "@mui/material";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/nav/NavBar";
 import Footer from "@/app/components/Footer";
 
 export default function Privacy() {

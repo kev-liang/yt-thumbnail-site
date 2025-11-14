@@ -15,6 +15,7 @@ let theme = createTheme({
     grey: {
       100: "#F2F2F2",
       200: "#F5F6F8", // background grey
+      400: "#999",
       600: "#707070",
       800: "#343D40",
     },

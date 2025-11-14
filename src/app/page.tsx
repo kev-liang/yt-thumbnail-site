@@ -1,4 +1,4 @@
-import NavBar from "./components/NavBar";
+import NavBar from "./components/nav/NavBar";
 import Hero from "./components/Hero";
 import Usage from "./components/Usage";
 import FAQ from "./components/Faq";
@@ -11,16 +11,12 @@ export default function Home() {
   return (
     <>
       <main>
-        <Box mb={8}>
-          <NavBar />
-        </Box>
         <Hero />
         <Usage />
         <InstructionsSection />
         <Cta />
         <FAQ />
       </main>
-      <Footer />
     </>
   );
 }

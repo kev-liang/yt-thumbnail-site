@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Button, Paper, Typography } from "@mui/material";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/nav/NavBar";
 import { CheckCircle } from "@mui/icons-material";
 import Footer from "../components/Footer";
 

@@ -4,7 +4,9 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import "./globals.css";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/app/styles/theme";
-import { CssBaseline } from "@mui/material";
+import { Box, CssBaseline } from "@mui/material";
+import NavBar from "@/app/components/nav/NavBar";
+import Footer from "@/app/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,13 +35,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // <html lang="en" className={`${inter.className}`}>
     <html lang="en" className={`${inter.variable} ${inriaSerif.variable}`}>
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
+            <Box mb={8}>
+              <NavBar />
+            </Box>
             {children}
+            <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

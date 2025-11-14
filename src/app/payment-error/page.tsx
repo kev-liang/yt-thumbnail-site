@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Paper, Typography } from "@mui/material";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/nav/NavBar";
 import { ErrorOutline } from "@mui/icons-material";
 import Footer from "../components/Footer";
 
