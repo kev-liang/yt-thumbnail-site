@@ -10,7 +10,7 @@ export default function BlogLayout({
 }) {
   return (
     <>
-      <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 4 } }}>
+      <Container maxWidth="md" sx={{ py: { xs: 2, sm: 4 } }}>
         <MDXProvider>{children}</MDXProvider>
       </Container>
     </>
