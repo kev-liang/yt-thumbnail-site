@@ -9,7 +9,7 @@ import {
   ListItemText,
 } from "@mui/material";
 import NavBar from "../components/nav/NavBar";
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/components/home/Footer";
 
 export default function TermsOfService() {
   return (

@@ -3,7 +3,7 @@
 import { Box, Button, Paper, Typography } from "@mui/material";
 import NavBar from "../components/nav/NavBar";
 import { CheckCircle } from "@mui/icons-material";
-import Footer from "../components/Footer";
+import Footer from "../components/home/Footer";
 
 export default function ThankYouPage() {
   return (

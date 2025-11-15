@@ -1,5 +1,6 @@
 "use client";
 
+import { MDXProvider } from "@mdx-js/react";
 import { Container } from "@mui/material";
 
 export default function BlogLayout({
@@ -10,7 +11,7 @@ export default function BlogLayout({
   return (
     <>
       <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 4 } }}>
-        {children}
+        <MDXProvider>{children}</MDXProvider>
       </Container>
     </>
   );

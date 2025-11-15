@@ -20,7 +20,7 @@ export const BlogPostHeader = ({ post }: BlogPostHeaderProps) => {
         >
           {post.title}
         </Typography>
-        <Box sx={{ textAlign: "center" }}>
+        <Box sx={{ textAlign: "center", mt: 1 }}>
           <BlogSubtitle post={post} />
         </Box>
       </Box>
@@ -29,8 +29,8 @@ export const BlogPostHeader = ({ post }: BlogPostHeaderProps) => {
         sx={{
           position: "relative",
           width: { xs: 320, sm: 480, md: 640, lg: 800 }, // 16:9 aspect ratio
-          height: { xs: 180, sm: 270, md: 360, lg: 450 }, // 16:9 aspect ratio
-
+          height: { xs: 180, sm: 270, md: 360, lg: 450 },
+          mx: "auto",
           borderRadius: 2,
           overflow: "hidden",
           boxShadow: "0 4px 12px rgba(0,0,0,0.1)",

@@ -6,7 +6,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/app/styles/theme";
 import { Box, CssBaseline } from "@mui/material";
 import NavBar from "@/app/components/nav/NavBar";
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/components/home/Footer";
 
 const inter = Inter({
   subsets: ["latin"],

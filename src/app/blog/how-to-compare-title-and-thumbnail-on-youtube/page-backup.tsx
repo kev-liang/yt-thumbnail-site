@@ -12,10 +12,11 @@ const FirstPost = () => {
 
   return (
     <>
-      {/* <Typography variant="h2" sx={{ fontWeight: "bold", textAlign: "center" }}>
-        {currBlogPost.title}
-      </Typography> */}
       <BlogPostHeader post={currBlogPost} />
+      <Typography variant="body1">
+        This guide is for people who want to see how their YouTube video’s title
+        and thumbnail compare to others.
+      </Typography>
     </>
   );
 };

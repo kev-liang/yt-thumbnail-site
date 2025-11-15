@@ -19,6 +19,8 @@ const nextConfig: NextConfig = {
 
 // Simply wrap with MDX - no ContentLayer needed
 const withMDX = createMDX({
+  extension: /\.mdx?$/,
+
   // Add MDX options here if needed
 });
 
