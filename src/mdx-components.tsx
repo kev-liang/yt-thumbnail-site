@@ -13,17 +13,17 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       const currBlogPost = getBlogPostBySlug(slug) as BlogPost;
       return <BlogPostHeader post={currBlogPost} />;
     },
-    p: (props) => <Typography variant="body1" {...props} />,
-    li: (props) => <Typography variant="body1" component="li" {...props} />,
-    em: (props) => <Typography variant="body1" component="em" {...props} />,
-    strong: (props) => (
-      <Typography
-        variant="body1"
-        component="p"
-        sx={{ fontWeight: "bold" }}
-        {...props}
-      />
-    ),
+    // p: (props) => <Typography variant="body1" {...props} />,
+    // li: (props) => <Typography variant="body1" component="li" {...props} />,
+    // em: (props) => <Typography variant="body1" component="em" {...props} />,
+    // strong: (props) => (
+    //   <Typography
+    //     variant="body1"
+    //     component="p"
+    //     sx={{ fontWeight: "bold" }}
+    //     {...props}
+    //   />
+    // ),
     Figure,
     a: (props) => {
       // Use Next.js Link for internal links, MUI Link for styling
