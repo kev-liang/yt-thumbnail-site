@@ -12,10 +12,23 @@ const Footer = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        gap: 1,
       }}
     >
       <Typography>YouTube Thumbnail Swapper © 2025</Typography>
-      <Box sx={{ display: "flex", gap: 3 }}>
+      <Box
+        sx={{
+          display: "flex",
+          gap: 3,
+          flexDirection: { sm: "column", xs: "column", md: "row" },
+        }}
+      >
+        <Link href="/" color="inherit">
+          Home
+        </Link>
+        <Link href="/blog" color="inherit">
+          Blog
+        </Link>
         <Link href="/terms-of-service" color="inherit">
           Terms of Service
         </Link>

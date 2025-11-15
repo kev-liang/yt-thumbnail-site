@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Compare Title and Thumbnail on YouTube",
     description:
       "Learn how to compare your title and thumbnail on the YouTube site",
-    date: "11/14/2025",
+    date: "11/15/2025",
     duration: 4,
     image: "/images/blog/howto.png",
   },

@@ -39,6 +39,9 @@ export const BlogCard = ({ post }: BlogCardProps) => {
 
         <CardContent sx={{ flexGrow: 1, p: 3, pb: 2 }}>
           <Box sx={{ mb: 1.5 }}>
+            <Typography variant="body1" fontWeight="bold">
+              {post.title}
+            </Typography>
             <BlogSubtitle post={post} />
           </Box>
 
@@ -49,7 +52,7 @@ export const BlogCard = ({ post }: BlogCardProps) => {
               lineHeight: 1.5,
               mb: 2,
               display: "-webkit-box",
-              WebkitLineClamp: 2,
+              WebkitLineClamp: 3,
               WebkitBoxOrient: "vertical",
               overflow: "hidden",
               color: "grey.400",

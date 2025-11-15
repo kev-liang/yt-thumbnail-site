@@ -1,34 +1,36 @@
-import { Box, Typography } from "@mui/material";
-import Image, { ImageProps } from "next/image";
+import { Box, Typography, Paper } from "@mui/material";
 import { ReactNode } from "react";
 
 interface FigureProps {
-  src: ImageProps["src"];
-  alt: string;
+  srcComponent: ReactNode;
   caption?: ReactNode;
-  width?: number;
-  height?: number;
+  elevation?: number;
 }
 
-const Figure = ({
-  src,
-  alt,
-  caption,
-  width = 800,
-  height = 400,
-}: FigureProps) => (
-  <Box component="figure" sx={{ my: 3, textAlign: "center", mx: 0 }}>
-    <Image
-      src={src}
-      alt={alt}
-      width={width}
-      height={height}
-      style={{
-        maxWidth: "100%",
-        height: "auto",
+const Figure = ({ srcComponent, caption, elevation = 2 }: FigureProps) => (
+  <Box
+    component="figure"
+    sx={{
+      my: 3,
+      textAlign: "center",
+      mx: 0,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    }}
+  >
+    <Paper
+      elevation={elevation}
+      sx={{
+        p: 1,
         borderRadius: "4px",
+        overflow: "hidden",
+        display: "inline-block",
+        maxWidth: "100%",
       }}
-    />
+    >
+      {srcComponent}
+    </Paper>
     {caption && (
       <Typography
         component="figcaption"

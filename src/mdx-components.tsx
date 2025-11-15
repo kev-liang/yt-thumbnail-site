@@ -17,12 +17,20 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     li: (props) => <Typography variant="body1" component="li" {...props} />,
     em: (props) => <Typography variant="body1" component="em" {...props} />,
     strong: (props) => (
-      <Typography variant="body1" component="strong" {...props} />
+      <Typography
+        variant="body1"
+        component="p"
+        sx={{ fontWeight: "bold" }}
+        {...props}
+      />
     ),
     Figure,
     a: (props) => {
       // Use Next.js Link for internal links, MUI Link for styling
       const href = props.href as string;
+      const target = props.target as string;
+      const rel = props.rel as string;
+      // const isExternal = true;
       const isExternal = href?.startsWith("http") || href?.startsWith("mailto");
 
       if (isExternal) {
@@ -45,19 +53,30 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
       // For internal links, wrap MuiLink with Next.js Link
       return (
-        <Link href={href} passHref legacyBehavior>
-          <Link
-            color="primary"
-            underline="always"
-            sx={{
-              fontWeight: 500,
-              "&:hover": {
-                color: "primary.dark",
-              },
-            }}
-            {...props}
-          />
-        </Link>
+        <MuiLink
+          color="primary"
+          underline="always"
+          sx={{
+            fontWeight: 500,
+            "&:hover": {
+              color: "primary.dark",
+            },
+          }}
+          {...props}
+        />
+        // <Link href={href} passHref legacyBehavior>
+        //   <Link
+        //     color="primary"
+        //     underline="always"
+        //     sx={{
+        //       fontWeight: 500,
+        //       "&:hover": {
+        //         color: "primary.dark",
+        //       },
+        //     }}
+        //     {...props}
+        //   />
+        // </Link>
       );
     },
   };

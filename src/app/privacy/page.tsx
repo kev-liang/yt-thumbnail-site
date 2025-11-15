@@ -5,7 +5,6 @@ import Footer from "@/app/components/home/Footer";
 export default function Privacy() {
   return (
     <>
-      <NavBar />
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Typography variant="h3" component="h1" gutterBottom fontWeight="bold">
           Privacy Policy for Thumbnail Swapper
@@ -172,7 +171,6 @@ export default function Privacy() {
           .
         </Typography>
       </Container>
-      <Footer />
     </>
   );
 }

@@ -14,7 +14,6 @@ import Footer from "@/app/components/home/Footer";
 export default function TermsOfService() {
   return (
     <>
-      <NavBar />
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Typography variant="h3" component="h1" gutterBottom fontWeight="bold">
           Terms of Service
@@ -195,7 +194,6 @@ export default function TermsOfService() {
           .
         </Typography>
       </Container>
-      <Footer />
     </>
   );
 }
